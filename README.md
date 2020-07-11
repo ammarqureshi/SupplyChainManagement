@@ -1,11 +1,18 @@
 # Supply chain & data auditing
 
 Deployed Contracts on Rinkeby: 
+
 Supply Chain: 0xf6ad79164170b2d8a8bfd9c77ee2c84ab937ee3c - https://rinkeby.etherscan.io/address/0xf6ad79164170b2d8a8bfd9c77ee2c84ab937ee3c
 Consumer Role: 0xFfd0d849F5F24DbeBC38C65A39E2De0095FB53Eb - https://rinkeby.etherscan.io/address/0xffd0d849f5f24dbebc38c65a39e2de0095fb53eb
 Retailer Role: 0x4612241a47Bbb76F4Ac9849cBb302D921106bCa8 - https://rinkeby.etherscan.io/address/0x4612241a47bbb76f4ac9849cbb302d921106bca8
 Distributor Role: 0x163fefE4Bf8064eC91DBBE00B13F37A1d8486143 - https://rinkeby.etherscan.io/address/0x163fefe4bf8064ec91dbbe00b13f37a1d8486143
 Farmer Role: 0x88c738a924f21f1eC55659Aa7Bb6bdFe6C7bceb7 - https://rinkeby.etherscan.io/address/0x88c738a924f21f1eC55659Aa7Bb6bdFe6C7bceb7
+
+
+Example of what it should look when you run ```truffle mgirate --reset all --network rinkeby```
+![truffle migrate --reset all --network rinkeby](images/deploy-contract-1.png)
+![truffle migrate --reset all --network rinkeby](images/deploy-contract-2.png)
+
 
 
 
