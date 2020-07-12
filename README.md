@@ -20,9 +20,11 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 
 The DApp User Interface when running should look like...
 
-![truffle test](images/page1.png)
+![search](images/search.png)
+![farm details](images/farm-details.png)
+![product details](images/product-details.png)
+![transaction history](images/tx-history.png)
 
-![truffle test](images/page2.png)
 
 ## UML
 ![UML](images/UML-dig.png)
