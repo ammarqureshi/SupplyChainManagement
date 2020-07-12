@@ -20,13 +20,10 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 
 The DApp User Interface when running should look like...
 
-![truffle test](images/ftc_product_overview.png)
+![truffle test](images/page1.png)
 
-![truffle test](images/ftc_farm_details.png)
+![truffle test](images/page2.png)
 
-![truffle test](images/ftc_product_details.png)
-
-![truffle test](images/ftc_transaction_history.png)
 
 
 ## Getting Started
