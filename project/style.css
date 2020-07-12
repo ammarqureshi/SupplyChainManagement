@@ -10,7 +10,7 @@ body {
 }
 
 
-.bold { 
+.bold {
   font-weight: bolder;
 }
 
@@ -33,7 +33,7 @@ button {
     cursor: pointer;
 }
 
-.sell { 
+.sell {
   background-color: white;
   color: #D1C4E9;
 }
