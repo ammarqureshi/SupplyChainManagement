@@ -24,7 +24,8 @@ The DApp User Interface when running should look like...
 
 ![truffle test](images/page2.png)
 
-
+## UML
+![UML](images/UML-dig.png)
 
 ## Getting Started
 
