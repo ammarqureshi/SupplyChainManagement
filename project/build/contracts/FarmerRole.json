@@ -2671,12 +2671,12 @@
         }
       },
       "links": {},
-      "address": "0xcdae3D48B0B3e3657C67c667465cAeEb9B200388",
-      "transactionHash": "0x3dd177a9fe6850db13039fc7b2a337b2808214feee117618a1da34747f6e89dc"
+      "address": "0x0f23c1979AA9ad82e125BED476cd1819F3652F0E",
+      "transactionHash": "0x05bf39eb15f91e517ee6d7dd5f8ed9decda37ba413d5a0b192a28745cab857d4"
     }
   },
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-07-12T14:16:18.261Z",
+  "updatedAt": "2020-07-16T21:44:19.855Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
