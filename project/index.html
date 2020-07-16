@@ -52,14 +52,17 @@
 
             <h2>Farm Details</h2>
 
-            <div class="form-group">
-                UPC
-                <br>
-                <input type="number" id="farmerupc" name="farmerupc" value=1><br>
+            <div class="form-group" style="float:left">
                 Farmer ID
                 <br>
                 <input type="text" id="originFarmerID" name="originFarmerID"
                     value="0x99c289eb2aacec289631a5ddf62cf27a63d4494f" size="50"><br>
+                <button class="btn-farmer-add" id="button" type="button" data-id="11">Add ID</button>
+                <br>
+                <br>
+                UPC
+                <br>
+                <input type="number" id="farmerupc" name="farmerupc" value=1><br>
                 Farm Name
                 <br>
                 <input type="text" id="originFarmName" name="originFarmName" value="John Doe"><br>
@@ -72,17 +75,21 @@
                 Farm Longitude
                 <br>
                 <input type="text" id="originFarmLongitude" name="originFarmLongitude" value="144.341490"><br>
-                Asking Price
-                <br>
-                <input type="number" id="farmerPrice" name="farmerPrice" value=1> ETH<br>
-                <br>
                 <button class="btn-harvest" id="button" type="button" data-id="1">Harvest</button>
                 <button class="btn-process" id="button" type="button" data-id="2">Process</button>
                 <button class="btn-pack" id="button" type="button" data-id="3">Pack</button>
+                <br>
+                <br>
+                Asking Price
+                <br>
+                <input type="number" id="farmerPrice" name="farmerPrice" value=1> ETH<br>
+
                 <button class="btn-forsale" id="button" type="button" data-id="4">ForSale</button>
             </div>
 
     </div>
+
+
     <div id="prod-details" class="tabcontent">
 
         <h2>Product Details</h2>

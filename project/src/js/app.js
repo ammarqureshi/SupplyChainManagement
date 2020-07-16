@@ -167,6 +167,9 @@ App = {
             case 10:
                 return await App.fetchItemBufferTwo(event);
                 break;
+            case 11:
+                return await App.addFarmerRole(event);
+                break;
             }
     },
 
@@ -191,6 +194,32 @@ App = {
         }).catch(function(err) {
             console.log(err.message);
         });
+    },
+
+    addFarmerRole: function(event){
+      event.preventDefault();
+      console.log('add farmer');
+      App.readForm();
+    //   App.contracts.SupplyChain.deployed().then(function(instance){
+    //       return instance.addFarmer(App.originFarmerID);
+    //   }).then(function(result){
+    //       console.log('farmer added: ' + App.originFarmerID);
+    //       alert('farmer with address: ', App.originFarmerID, ' has been added');
+    //   }).catch(function(err){
+    //       console.log(err.message);
+    //   });
+
+    console.log('farmer id: ', App.originFarmerID);
+    App.contracts.SupplyChain.deployed().then(function(instance) {
+        return instance.addFarmer(App.originFarmerID);
+    }).then(function(result) {
+          console.log('farmer added: ' + App.originFarmerID);
+          alert('farmer with address: ', App.originFarmerID, ' has been added');
+    }).catch(function(err) {
+        console.log(err.message);
+    });
+
+
     },
 
     processItem: function (event) {
