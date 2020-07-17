@@ -17,14 +17,14 @@
     </div>
 
     <button class="tablink" onclick="openPage('search', this, 'red')" id="defaultOpen">Search</button>
-    <button class="tablink" onclick="openPage('farm-details', this, 'green')">Farm Details</button>
-    <button class="tablink" onclick="openPage('prod-details', this, 'blue')">Product Details</button>
+    <button class="tablink" onclick="openPage('farm-details', this, 'green')">Farming</button>
+    <button class="tablink" onclick="openPage('prod-details', this, 'blue')">Product</button>
     <button class="tablink" onclick="openPage('tx-history', this, 'orange')">Transaction History</button>
 
 
     <div id="search" class="tabcontent">
         <div id="ftc-harvest">
-            <h2>Search Product</h2>
+            <h1>Search Product</h1>
             <div class="form-group">
 
                 UPC
@@ -50,76 +50,98 @@
 
     <div id="farm-details" class="tabcontent">
 
-            <h2>Farm Details</h2>
+        <h1>Farming</h1>
 
-            <div class="form-group" style="float:left">
-                Farmer ID
-                <br>
-                <input type="text" id="originFarmerID" name="originFarmerID"
-                    value="0x99c289eb2aacec289631a5ddf62cf27a63d4494f" size="50"><br>
-                <button class="btn-farmer-add" id="button" type="button" data-id="11">Add ID</button>
-                <br>
-                <br>
-                UPC
-                <br>
-                <input type="number" id="farmerupc" name="farmerupc" value=1><br>
-                Farm Name
-                <br>
-                <input type="text" id="originFarmName" name="originFarmName" value="John Doe"><br>
-                Farm Information
-                <br>
-                <input type="text" id="originFarmInformation" name="originFarmInformation" value="Yarra Valley"><br>
-                Farm Latitude
-                <br>
-                <input type="text" id="originFarmLatitude" name="originFarmLatitude" value="-38.239770"><br>
-                Farm Longitude
-                <br>
-                <input type="text" id="originFarmLongitude" name="originFarmLongitude" value="144.341490"><br>
-                <button class="btn-harvest" id="button" type="button" data-id="1">Harvest</button>
-                <button class="btn-process" id="button" type="button" data-id="2">Process</button>
-                <button class="btn-pack" id="button" type="button" data-id="3">Pack</button>
-                <br>
-                <br>
-                Asking Price
-                <br>
-                <input type="number" id="farmerPrice" name="farmerPrice" value=1> ETH<br>
+        <div class="form-group" style="float:left">
+            <h2>Add Farmer Role</h2>
+            Farmer Address
+            <br>
+            <input type="text" id="originFarmerID" name="originFarmerID"
+                value="0x99c289eb2aacec289631a5ddf62cf27a63d4494f" size="50"><br>
+            <button class="btn-farmer-add" id="button" type="button" data-id="11">Add</button>
 
-                <button class="btn-forsale" id="button" type="button" data-id="4">ForSale</button>
-            </div>
+        </div>
+
+        <div class="form-group" style="float:left">
+            <h2>Farming Operations</h2>
+            UPC
+            <br>
+            <input type="number" id="farmerupc" name="farmerupc" value=1><br>
+            Farm Name
+            <br>
+            <input type="text" id="originFarmName" name="originFarmName" value="John Doe"><br>
+            Farm Details
+            <br>
+            <input type="text" id="originFarmInformation" name="originFarmInformation" value="Yarra Valley"><br>
+            Product Notes
+            <br>
+            <input type="text" id="productNotes" name="productNotes" value="Best beans for Espresso" size="60"><br>
+            Farm Latitude
+            <br>
+            <input type="text" id="originFarmLatitude" name="originFarmLatitude" value="-38.239770"><br>
+            Farm Longitude
+            <br>
+            <input type="text" id="originFarmLongitude" name="originFarmLongitude" value="144.341490"><br>
+            <button class="btn-harvest" id="button" type="button" data-id="1">Harvest</button>
+            <button class="btn-process" id="button" type="button" data-id="2">Process</button>
+            <button class="btn-pack" id="button" type="button" data-id="3">Pack</button>
+            <br>
+            <br>
+            Asking Price
+            <br>
+            <input type="number" id="farmerPrice" name="farmerPrice" value=1> ETH<br>
+
+            <button class="btn-forsale" id="button" type="button" data-id="4">ForSale</button>
+        </div>
 
     </div>
 
 
     <div id="prod-details" class="tabcontent">
 
-        <h2>Product Details</h2>
+        <h1>Product Operations</h1>
         <div class="form-group">
             UPC
             <br>
             <input type="number" id="productupc" name="productupc" value=1><br>
-            Product Notes
-            <br>
-            <input type="text" id="productNotes" name="productNotes" value="Best beans for Espresso" size="60"><br>
+        </div>
+        <div class="form-group">
+
             Product Price
             <br>
             <input type="number" id="productPrice" name="productPrice" value=1> ETH<br>
-            Distributor ID
+            Distributor Address
             <br>
             <input type="text" id="distributorID" name="distributorID"
                 value="0xf1b1bcd24dad92303dd9fe78be639f7bcf9c238d" size="50">
             <br>
-            Retailer ID
+            <button class="btn-distributor-add" id="button" type="button" data-id="12">Add to Role</button>
+            <button class="btn-buy" id="button" type="button" data-id="5">Buy</button>
+            <button class="btn-ship" id="button" type="button" data-id="6">Ship</button>
+            <br>
+        </div>
+
+
+        <div class="form-group">
+
+            Retailer Address
             <br>
             <input type="text" id="retailerID" name="retailerID" value="0x0fb2bfefd526966c87efa19f6693d50971763fc2"
                 size="50"><br>
-            Consumer ID
+            <button class="btn-retailer-add" id="button" type="button" data-id="13">Add to Role</button>
+            <button class="btn-receive" id="button" type="button" data-id="7">Receive</button>
+            <br>
+            <br>
+        </div>
+
+        <div class="form-group">
+
+            Consumer Address
             <br>
             <input type="text" id="consumerID" name="consumerID" value="0x5d777e9127b28fb119e81a6304278a0a21bef1c4"
                 size="50"><br>
-            <br>
-            <button class="btn-buy" id="button" type="button" data-id="5">Buy</button>
-            <button class="btn-ship" id="button" type="button" data-id="6">Ship</button>
-            <button class="btn-receive" id="button" type="button" data-id="7">Receive</button>
+            <button class="btn-consumer-add" id="button" type="button" data-id="14">Add to Role</button>
+
             <button class="btn-purchase" id="button" type="button" data-id="8">Purchase</button>
         </div>
 
@@ -128,7 +150,7 @@
     </div>
 
     <div id="tx-history" class="tabcontent">
-        <h2>Transaction History<span id="ftc-history"></span></h2>
+        <h1>Transaction History<span id="ftc-history"></span></h1>
         <div>
             <ul id="ftc-events">
                 <!-- Events will appear here from app.js -->
