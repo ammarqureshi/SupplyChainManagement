@@ -19,7 +19,9 @@
     <button class="tablink" onclick="openPage('search', this, 'red')" id="defaultOpen">Search</button>
     <button class="tablink" onclick="openPage('farm-details', this, 'green')">Farming</button>
     <button class="tablink" onclick="openPage('prod-details', this, 'blue')">Product</button>
-    <button class="tablink" onclick="openPage('tx-history', this, 'orange')">Transaction History</button>
+    <button class="tablink" onclick="openPage('prod-tx-history', this, 'orange')">Product Transaction History</button>
+    <button class="tablink" onclick="openPage('role-tx-history', this, 'purple')">Role Transaction History</button>
+
 
 
     <div id="search" class="tabcontent">
@@ -149,7 +151,7 @@
 
     </div>
 
-    <div id="tx-history" class="tabcontent">
+    <div id="prod-tx-history" class="tabcontent">
         <h1>Transaction History<span id="ftc-history"></span></h1>
         <div>
             <ul id="ftc-events">
@@ -157,8 +159,17 @@
             </ul>
             <br>
         </div>
+    </div>
 
 
+    <div id="role-tx-history" class="tabcontent">
+        <h1>Transaction History<span id="ftc-history"></span></h1>
+        <div>
+            <ul id="role-events">
+                <!-- Events will appear here from app.js -->
+            </ul>
+            <br>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

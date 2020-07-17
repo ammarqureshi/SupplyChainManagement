@@ -318,10 +318,6 @@ App = {
     },
 
     fetchItemBufferOne: function () {
-        ///   event.preventDefault();
-        ///    var processId = parseInt($(event.target).data('id'));
-        // App.upc = $('#upc').val();
-        // console.log('upc',App.upc);
         App.readForm();
 
 
@@ -385,9 +381,6 @@ App = {
             $("#fetch").append('<li>' + 'retailerID' + ' : ' + result[7] + '</li>');
             $("#fetch").append('<li>' + 'consumerID' + ' : ' + result[8] + '</li>');
 
-
-
-
         }).catch(function (err) {
             console.log(err.message);
         });
@@ -410,7 +403,18 @@ App = {
                 console.log('args' + log.args);
                 console.log('upc event' + log.args["upc"]);
                 const upc = log.args["upc"];
-                $("#ftc-events").append('<li>' + 'UPC ' + upc + ': ' + log.event + ' - ' + log.transactionHash + '</li>');
+                const adr = log.args["account"];
+                console.log('upc: ' + upc);
+                console.log('adr: ' + adr);
+                if(upc !== undefined ){
+                console.log('in upc');
+                $("#ftc-events").append('<li>' + 'UPC: ' + upc + ': ' + ' EVENT: ' + log.event + ' TX HASH: ' + log.transactionHash + '</li>');
+                }
+                if(adr !== undefined){
+                console.log('in adr');
+                $("#role-events").append('<li>' + 'ADDRESS: ' + adr + ': ' + ' EVENT: ' + log.event + ' TX HASH: '+ log.transactionHash + '</li>');
+
+                }
             });
         }).catch(function (err) {
             console.log(err.message);
