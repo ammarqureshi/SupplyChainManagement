@@ -86,6 +86,18 @@ You can find activity, class, sequence and state diagrams in the UML folder.
 ### Class Diagram
 ![class](UML/class-dig.png)
 
+
+## Deploying to Rinkeby: 
+Once the smart contracts are compiled and the tests run successfully, you can deploy the smart contracts to a test network such as Rinkeby
+
+In 'truffle.js' file, pass in your mnemonic and your infura api key into HDWalletProvider and run:
+
+```truffle mgirate --reset all --network rinkeby```
+
+You should have something similar once truffle is able to deploy the contracts successfully: 
+![migrate --reset all --network rinkeby](images/deploy-contract-1.png)
+![migrate --reset all --network rinkeby](images/deploy-contract-2.png)
+
 ## Deployments on Rinkeby: 
 
 Migrations: 0xb6f51A630f46284467b4c340E574e9d6d2e3C411 - https://rinkeby.etherscan.io/address/0xb6f51a630f46284467b4c340e574e9d6d2e3c411
@@ -100,10 +112,6 @@ Consumer Role: 0x9941C627fA64A1eb9138239056C21f5D389A3F84 - https://rinkeby.ethe
 
 Supply Chain: 0x619F32dD07B5b2d77Be77DaBe0b991641C47a18E - https://rinkeby.etherscan.io/address/0x619f32dd07b5b2d77be77dabe0b991641c47a18e
 
-
-Example of what it should look when you run ```truffle mgirate --reset all --network rinkeby```
-![migrate --reset all --network rinkeby](images/deploy-contract-1.png)
-![migrate --reset all --network rinkeby](images/deploy-contract-2.png)
 
 
 ## Built With
