@@ -1,6 +1,6 @@
 # Supply chain & data auditing
 
-This project is an Ethereum DApp implementing supply chain management and auditing. It will track and record the lifecycle of items on the Ethereum Blockchain; from the time it is harvested, all the way to when a consumer purchases the item. 
+This project is an Ethereum DApp implementing supply chain management and auditing. It will track and record the lifecycle of items on the Ethereum Blockchain; from the time it is harvested; all the way to when a consumer purchases the item. 
  
 
 ## Role Based Access Control
