@@ -1,7 +1,13 @@
 # Supply chain & data auditing
 
+This project is an Ethereum DApp implementing supply chain management and auditing. It will track and record the lifecycle of items on the Ethereum Blockchain; from the time it is harvested, all the way to when a consumer purchases the item. 
+ 
 
-This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
+## Role Based Access Control
+The supply chain smart contract applies Role Based Access Control(RBAC); only certain accounts are granted permisiions to perform certain operations. For example, only an account address which is assigned the Farmer Role will be able to harvest and pack the item. An account address which is assigned the role of a Consumer will not be able to harvest items but only purchase them.
+
+Once an account address has access to certain role, they can assign the same role to another account addresses. 
+By default, the account address that deploys the contracts inherits all of the roles and thus is able to assign other account addresses with certain roles. 
 
 ## Getting Started
 
