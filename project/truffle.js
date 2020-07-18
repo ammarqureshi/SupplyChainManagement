@@ -23,8 +23,8 @@
 // const HDWalletProvider = require('truffle-hdwallet-provider');
 var HDWalletProvider = require("@truffle/hdwallet-provider");
 
-// const fs = require('fs');
-const mnemonic = "more pink among attend smoke emotion slim finger copper clog cactus stage";
+const mnemonic = "<YOUR-MNEMONIC>";
+const InfuraAPIKey = "<YOUR-KEY>";
 
 module.exports = {
 
@@ -36,17 +36,17 @@ module.exports = {
      },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    rinkeby: {
-      // provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/${infuraKey}`),
-      provider : new HDWalletProvider(mnemonic, 'https://rinkeby.infura.io/v3/51d9a7bff6ef478e81791999b8b3e336'),
+    // rinkeby: {
+    //   // provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/${infuraKey}`),
+    //   provider : new HDWalletProvider(mnemonic, InfuraAPIKey),
 
-        network_id: 4,       // rinkeby's id
-        gas: 4500000,        // rinkeby has a lower block limit than mainnet
-        // gasPrice: 10000000000,
-      confirmations: 0,    // # of confs to wait between deployments. (default: 0)
-      // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
-    },
+    //     network_id: 4,       // rinkeby's id
+    //     gas: 4500000,        // rinkeby has a lower block limit than mainnet
+    //     // gasPrice: 10000000000,
+    //   confirmations: 0,    // # of confs to wait between deployments. (default: 0)
+    //   // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+    //   skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+    // },
   },
 
   // Set default mocha options here, use special reporters etc.
