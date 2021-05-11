@@ -76,7 +76,7 @@
     "iterate-value": "^1.0.2",
     "js-yaml": "^3.14.0",
     "locate-path": "^5.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "log-symbols": "^4.0.0",
     "minimatch": "^3.0.4",
     "minimist": "^1.2.5",
