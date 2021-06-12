@@ -48,7 +48,7 @@
     "function-bind": "^1.1.1",
     "get-caller-file": "^2.0.5",
     "glob": "^7.1.6",
-    "glob-parent": "^5.1.1",
+    "glob-parent": "^5.1.2",
     "growl": "^1.10.5",
     "has": "^1.0.3",
     "has-flag": "^4.0.0",
